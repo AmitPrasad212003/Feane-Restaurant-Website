@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static %}
+{% block class %}
+    class="sub_page"
+{% endblock class %}
+
+{% block feedback_status %}active{% endblock feedback_status %}
+{% block main %}
+<!-- book section -->
+  <section class="book_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Your review matters to us
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container">
+            <form action="">
+              <div>
+                <input type="text" class="form-control" placeholder="Your Name" />
+              </div>
+              <div class="mb-3">
+                <textarea name="Description" id="exampleFormControlTextarea1" class="form-control" rows="3" required placeholder="Describe your exprience here"></textarea>
+                
+              </div>
+              
+              <div>
+                <select class="form-control nice-select wide">
+                  <option value="" disabled selected>
+                    Please Give Us Rating?
+                  </option>
+                  <option value="1">
+                    1
+                  </option>
+                  <option value="2">
+                    2
+                  </option>
+                  <option value="3">
+                    3
+                  </option>
+                  <option value="4">
+                    4
+                  </option>
+                  <option value="5">
+                    5
+                  </option>
+                </select>
+              </div>
+              <div>
+                <label for="formFileLg" class="from-label">Select Image</label>
+                <input type="file" class="form-control from-control-lg" id="formFileLg">
+              </div>
+              <div class="btn_box">
+                <button>
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        {% comment %} <div class="col-md-6">
+          <div class="map_container ">
+            <div id="googleMap"></div>
+          </div>
+        </div> {% endcomment %}
+      </div>
+    </div>
+  </section>
+<!-- end book section -->
+{% endblock main %}
